@@ -1,0 +1,234 @@
+{
+	"info": {
+		"_postman_id": "f4c42153-5d53-4f58-b80e-7abff9f21709",
+		"name": "Test postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:9090/Produits",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"nom\": \"Mon nouveau Produit\",\r\n    \"prix\": 65,\r\n    \"prixAchat\": 10\r\n}\r\n"
+				},
+				"url": {
+					"raw": "localhost:9090/Produits",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Produits"
+					]
+				},
+				"description": "Affiche tous les produits"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/Produits",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"nom\": \"Mon nouveau Produit\",\r\n    \"prix\": 65,\r\n    \"prixAchat\": 10\r\n}\r\n"
+				},
+				"url": {
+					"raw": "localhost:9090/Produits",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Produits"
+					]
+				},
+				"description": "Crée un nouveau produit"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/Produits/id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"nom\": \"Mon nouveau Produit\",\r\n    \"prix\": 65,\r\n    \"prixAchat\": 10\r\n}\r\n"
+				},
+				"url": {
+					"raw": "localhost:9090/Produits/4",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Produits",
+						"4"
+					]
+				},
+				"description": "Supprime un produit en fonction de l'ID"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/Produits",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"nom\": \"Mon nouveau Produit\",\r\n    \"prix\": 65,\r\n    \"prixAchat\": 10\r\n}\r\n"
+				},
+				"url": {
+					"raw": "localhost:9090/Produits",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Produits"
+					]
+				},
+				"description": "Crée un nouveau produit avec PUT"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/Produits/Asc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"nom\": \"Mon nouveau Produit\",\r\n    \"prix\": 65,\r\n    \"prixAchat\": 10\r\n}\r\n"
+				},
+				"url": {
+					"raw": "localhost:9090/Produits/Asc",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Produits",
+						"Asc"
+					]
+				},
+				"description": "Trie par ordre Alphabétique"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/AdminProduits",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"nom\": \"Mon nouveau Produit\",\r\n    \"prix\": 65,\r\n    \"prixAchat\": 10\r\n}\r\n"
+				},
+				"url": {
+					"raw": "localhost:9090/AdminProduits",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"AdminProduits"
+					]
+				},
+				"description": "Calcule la marge des produits"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/Produits/id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"nom\": \"Mon nouveau Produit\",\r\n    \"prix\": 65,\r\n    \"prixAchat\": 10\r\n}\r\n"
+				},
+				"url": {
+					"raw": "localhost:9090/Produits/3",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Produits",
+						"3"
+					]
+				},
+				"description": "Affiche le produit en fonction de l'ID"
+			},
+			"response": []
+		}
+	]
+}

@@ -23,6 +23,7 @@ public class Product {
     private int prix;
 
     //information que nous ne souhaitons pas exposer
+    @Min(value = 1, message = "Attnetion prix d'achat est 0")
     private int prixAchat;
 
     //constructeur par défaut
