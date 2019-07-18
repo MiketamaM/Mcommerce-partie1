@@ -59,7 +59,7 @@ public class ProductController {
         return produit;
     }
 
-    //Partie 1
+    //Partie 1, calcule de la marge des produits
     @ApiOperation(value = "Marge Produit")
     @GetMapping(value = "/AdminProduits")
     public List<String> calculerMargeProduit(){
@@ -80,7 +80,7 @@ public class ProductController {
         return list;
     }
 
-    //Partie 2
+    //Partie 2, trie dans l'ordre alphabétique
     @ApiOperation(value = "Tri par odre alphabétique")
     @GetMapping(value = "/Produits/Asc")
     public List<Product> trierProduitsParOrdreAlphabetique(){
